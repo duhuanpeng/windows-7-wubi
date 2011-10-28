@@ -1,3 +1,5 @@
+CD /D %~DP0
+
 IF NOT EXIST "TableTextServiceSimplifiedZhengMa.txt" EXIT /B
 
 
@@ -14,4 +16,4 @@ icacls "C:\Program Files (x86)\Windows NT\TableTextService\TableTextServiceSimpl
 DEL "C:\Program Files (x86)\Windows NT\TableTextService\TableTextServiceSimplifiedZhengMa.txt"
 COPY "TableTextServiceSimplifiedZhengMa.txt" "C:\Program Files (x86)\Windows NT\TableTextService\TableTextServiceSimplifiedZhengMa.txt"
 
-EXIT /B
+PAUSE
